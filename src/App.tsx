@@ -1,23 +1,20 @@
+import { ThemeProvider } from "styled-components"
 import { BrowserRouter } from "react-router-dom"
 import { Router } from "./Router"
-import { NavLink } from "react-router-dom"
+
+import { defaultTheme } from "./styles/themes/default"
+import { GlobalStyle } from "./styles/global"
+import { Header } from './Components/Header'
 
 export function App() {
   
   return (
-    <BrowserRouter>
-      <h1>Coffe Delivery</h1>
-      <NavLink to="/">
-        Home
-        </NavLink>
-      <NavLink to="/checkout">
-        Checkout
-      </NavLink>
-      <NavLink to="/Success">
-        Success
-      </NavLink>
-      <Router /> 
-    </BrowserRouter>
+    <ThemeProvider theme={defaultTheme}>
+      <BrowserRouter>
+        <Router /> 
+        <GlobalStyle />
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
 
