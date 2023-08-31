@@ -63,11 +63,12 @@ export const TextXS = styled.p`
   font-weight: 700;
 `
  
-export const Tag = styled.p`
+export const Tag = styled.span`
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.3;
   font-weight: 700;
+  text-transform: uppercase;
 `
  
 export const ButtonG = styled.p`

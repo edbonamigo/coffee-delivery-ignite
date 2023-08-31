@@ -1,9 +1,14 @@
 import { styled } from "styled-components";
 
 export const HeaderContainer = styled.header`
+  background: linear-gradient(${(props) => props.theme['base-background']} 30%, transparent);
+  max-width: 112.20rem;
+  margin: 0 auto;
+  padding: 2 3.2rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
 
   padding: 3.2rem 0;
 
@@ -31,10 +36,6 @@ export const HeaderContainer = styled.header`
       padding: .8rem 1rem;
       background: ${(props) => props.theme['yellow-light']};
       color: ${(props) => props.theme['yellow-dark']};
-      
-      /* &:hover {
-        background: ${(props) => props.theme['yellow']};
-      } */
     }
   }
 `
