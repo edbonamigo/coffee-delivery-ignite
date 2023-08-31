@@ -1,19 +1,19 @@
 import { Hero } from './Components/Hero'
-import { TitleL } from '../../styles/themes/typography'
 import { Coffees } from '../../mock/coffees'
 import { ProductsContainer, ProductList } from './styles'
-import { Product } from './Components/Product'
+import { ProductCard } from './Components/ProductCard'
 
 export function Products() {
   return (
     <ProductsContainer>
       <Hero />
+
       <section>
-        <TitleL className="TitleL">Our Coffess</TitleL>
+        <h1 className="TitleL">Our Coffess</h1>
 
         <ProductList>
           {Coffees.map((coffee) => {
-            return <Product key={coffee.id} coffee={coffee} />
+            return <ProductCard key={coffee.id} coffee={coffee} />
           })}
         </ProductList>
       </section>

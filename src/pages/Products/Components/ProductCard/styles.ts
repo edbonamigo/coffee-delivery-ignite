@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ProductCard = styled.li`
+export const ProductCardContainer = styled.li`
   background: ${(props) => props.theme['base-card']};
   list-style: none;
   flex: 4;
@@ -40,19 +40,19 @@ export const ProductCard = styled.li`
   .description {
     text-align: center;
     color: ${(props) => props.theme['base-label']};
-    margin-bottom: 3.3rem;
     padding: 0 2rem;
   }
 
   footer {
-    padding: 2.4rem 2rem;
+    padding: 3.3rem 2rem 2.4rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
     gap: 0.8rem;
+    margin-top: auto;
 
     .price {
-      align-self: flex-start;
+      align-self: center;
 
       p,
       h3 {

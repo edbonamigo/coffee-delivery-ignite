@@ -1,10 +1,19 @@
 import { styled } from 'styled-components'
-import { TextL, TextM, TitleXL } from '../../../../styles/themes/typography'
 
 export const HeroSection = styled.section`
   display: flex;
   justify-content: space-between;
   padding: 9.5rem 0;
+
+  .TitleXL {
+    color: ${(props) => props.theme['base-title']};
+    margin-bottom: 1.6rem;
+  }
+
+  .TextL {
+    color: ${(props) => props.theme['base-subtitle']};
+    margin-bottom: 6.5rem;
+  }
 
   .content {
     width: 52.5%;
@@ -66,15 +75,3 @@ export const HeroSection = styled.section`
     }
   }
 `
-
-export const Title = styled(TitleXL)`
-  color: ${(props) => props.theme['base-title']};
-  margin-bottom: 1.6rem;
-`
-
-export const Subtitle = styled(TextL)`
-  color: ${(props) => props.theme['base-subtitle']};
-  margin-bottom: 6.5rem;
-`
-
-export const Text = styled(TextM)``

@@ -1,5 +1,5 @@
 import CoffeeDeliveryImage from '../../../../assets/Coffee_delivery_cup_and_coffee.png'
-import { HeroSection, Title, Subtitle, Text } from './styles'
+import { HeroSection } from './styles'
 import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
 
 export function Hero() {
@@ -7,11 +7,13 @@ export function Hero() {
     <HeroSection>
       <div className="content">
         <header className="header">
-          <Title>Find the perfect coffee for any time of the day</Title>
-          <Subtitle>
+          <h1 className="TitleXL">
+            Find the perfect coffee for any time of the day
+          </h1>
+          <p className="TextL">
             With Coffee Delivery, you receive your coffee wherever you are, at
             any time
-          </Subtitle>
+          </p>
         </header>
 
         <ul className="highlights">
@@ -19,25 +21,25 @@ export function Hero() {
             <i>
               <ShoppingCart weight="fill" size={16} />
             </i>
-            <Text>Simple and secure purchase</Text>
+            <p className="TextM">Simple and secure purchase</p>
           </li>
           <li className="highlights__item">
             <i>
               <Package weight="fill" size={16} />
             </i>
-            <Text>Packaging keeps the coffee intact</Text>
+            <p className="TextM">Packaging keeps the coffee intact</p>
           </li>
           <li className="highlights__item">
             <i>
               <Timer weight="fill" size={16} />
             </i>
-            <Text>Fast and tracked delivery</Text>
+            <p className="TextM">Fast and tracked delivery</p>
           </li>
           <li className="highlights__item">
             <i>
               <Coffee weight="fill" size={16} />
             </i>
-            <Text>The coffee arrives fresh for you</Text>
+            <p className="TextM">The coffee arrives fresh for you</p>
           </li>
         </ul>
       </div>
